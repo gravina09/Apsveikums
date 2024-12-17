@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Christmas Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #d8f3dc, #92d0fa);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .card {
+            background: #e5f2f8;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px;
+            padding: 20px;
+        }
+        .card img {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+        .card h1 {
+            color: #6cbcf1;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .card p {
+            font-size: 1.2em;
+            margin: 10px 0 20px;
+            line-height: 1.5;
+        }
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .snowflakes div {
+            position: absolute;
+            background: white;
+            opacity: 0.8;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: fall 5s linear infinite;
+        }
+        @keyframes fall {
+            from {
+                transform: translateY(-50px);
+                opacity: 0.8;
+            }
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="snowflakes">
+        <div style="left: 10%; animation-delay: 0s;"></div>
+        <div style="left: 25%; animation-delay: 1s;"></div>
+        <div style="left: 50%; animation-delay: 2s;"></div>
+        <div style="left: 75%; animation-delay: 3s;"></div>
+        <div style="left: 90%; animation-delay: 4s;"></div>
+    </div>
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3128/3128313.png" alt="Christmas Tree">
+        <h1>Priecīgus Ziemassvētkus!</h1>
+        <p>Kad Ziemassvētku naktī sāk drebēt jums rūtis,
+            Tad ziniet, aiz loga mīt sen gaidītais rūķis,
+            Kas ielaidīs viņu, tas sapratīs pats,
+            Kad rūķis ir klāt, būs laimīgs viss gads.</p>
+        <p>🎄✨❄️</p>
+    </div>
+</body>
+</html>
+
